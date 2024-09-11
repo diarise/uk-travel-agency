@@ -8,6 +8,7 @@
 
 body {
     line-height: 1.6;
+    background-color: #f0f0f0;
 }
 
 /* Hero Section */
@@ -91,13 +92,22 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Flexbox layout for two videos side by side */
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-    height: 0;
-    overflow: hidden;
+    flex: 1 1 45%; /* Each video takes 45% of the container width */
     max-width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
     background: #000;
+    overflow: hidden;
 }
 
 .video-container iframe {
@@ -107,6 +117,100 @@ body {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .video-container {
+        flex: 1 1 100%; /* Full width on mobile */
+        margin-bottom: 2rem;
+    }
+}
+
+/* Meet Your Hosts Section */
+.meet-hosts {
+    padding: 3rem 2rem;
+    background-color: #f1f1f1;
+}
+
+.meet-hosts h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.host {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.host h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.host p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Partner Section */
+.partners {
+    padding: 3rem 2rem;
+    background-color: #e6e6e6;
+}
+
+.partners h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.partners .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.partners .logo-grid img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-top: 2px solid #e0e0e0;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.faq .faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq .faq-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.faq .faq-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.4;
 }
 
 /* Join Us Section */
