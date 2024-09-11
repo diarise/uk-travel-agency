@@ -238,3 +238,14 @@ body {
     color: white;
     text-align: center;
 }
+/* Footer Link Styling */
+.footer-link {
+    color: #f4a261; /* or any color of your choice */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    color: #e76f51; /* Hover color effect */
+    text-decoration: underline;
+}
