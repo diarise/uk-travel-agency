@@ -238,14 +238,41 @@ body {
     color: white;
     text-align: center;
 }
+/* Contact Us Section Styling */
+.contact-us {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #264653;
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+}
+
+.contact-link {
+    color: #e76f51;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
 /* Footer Link Styling */
 .footer-link {
-    color: #f4a261; /* or any color of your choice */
+    color: #f4a261;
     text-decoration: none;
     font-weight: bold;
 }
 
 .footer-link:hover {
-    color: #e76f51; /* Hover color effect */
+    color: #e76f51;
     text-decoration: underline;
 }
